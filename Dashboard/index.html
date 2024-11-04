@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark UI Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <div class="dashboard">
+        <header class="header">
+            <h1>Dashboard</h1>
+            <div class="datetime" id="datetime">Loading...</div>
+        </header>
+
+        <section class="content">
+            <!-- Weather -->
+            <div class="widget" id="weather-widget">
+                <h2>Weather</h2>
+                <p id="weather">Loading...</p>
+            </div>
+
+            <!-- Random Quotes -->
+            <div class="widget" id="quote-widget">
+                <h2>Quote of the Day</h2>
+                <p id="quote">Loading...</p>
+            </div>
+
+            <!-- Map with Search -->
+            <div class="widget" id="map-widget">
+                <h2>Map</h2>
+                <input type="text" id="locationSearch" placeholder="Search for a place">
+                <div id="map"></div>
+            </div>
+
+            <!-- News -->
+            <div class="widget" id="news-widget">
+                <h2>Current News</h2>
+                <ul id="news">Loading...</ul>
+            </div>
+
+            <!-- Trending Tags -->
+            <div class="widget" id="tags-widget">
+                <h2>Trending Tags</h2>
+                <ul id="trending-tags">Loading...</ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
